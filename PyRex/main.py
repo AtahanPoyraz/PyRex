@@ -23,7 +23,7 @@ class Main:
         self.parser.add_argument("-m", "--module", required=True, choices=['ftp', 'ssh', 'telnet'], help="Select a module: ftp, ssh, or telnet.")
         self.parser.add_argument("-t", "--target", required=True, help="Enter the IP or Domain.")
         self.parser.add_argument("-u", "--user", required=True, help="Username for login attempt.")
-        self.parser.add_argument("-to", "--timeout", required=True, type=int, help="Timeout per connection attempt for telnet module.")
+        self.parser.add_argument("-to", "--timeout", required=True, type=int, help="Timeout per connection attempt for ssh and telnet module.")
         self.parser.add_argument("-w", "--wordlist", required=True, help="Location of the file with passwords.")
 
         args = self.parser.parse_args()
